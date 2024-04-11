@@ -3,11 +3,81 @@
     <head>
         <meta charset = "UTF-8">
         <title>タイトル</title>
+        <meta name = "description" content = "文書の説明は検索エンジンの検索結果ページに表示されるため、タイトルと並びSEO上非常に重要です。">
     </head>
     
     
     <!-- コメント表示 -->
     <body>
+        <!--段落タグ -->
         <p>本文です。</p>
+        
+        <!-- 文書中の改行 終了タグがないことに注意 -->
+        <br>
+        
+        <!-- 
+            画像挿入 終了タグがないことに注意 
+            srcには、画像の場所を指定、altは画像が表示されないときの代わりとして表示される。
+        -->
+        <img src = "" alt = "">
+        
+        <!-- ページリンク -->
+        <a href = ""> ここの文字がクリックできるようになる </a>　
+        
+        <!-- 順序なしリスト -->
+        <ul>
+            <li>リンゴ</li>
+            <li>ミカン</li>
+            <li>メロン</li>
+        </ul>
+        
+        <!-- 順序ありリスト -->
+        <ol>
+            <li>ミカン</li>
+            <li>メロン</li>
+            <li>リンゴ</li>
+        </ol>
+        
+        <!-- 表 -->
+        <table border = "1">
+            <!-- 見出しを書く -->
+            <thead>
+               <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+               </tr>
+            </thead>
+            <!-- 表の内容を書く -->
+            <tbody>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+          </table>
+          
+          <!--
+             フォーム 
+             実際の稼働には、サーバーサイドプログラミング言語（Ruby, PHPなど）が必要で、
+             action = ""の属性を追加することで推移するURLを記載する必要がある
+         -->
+          <label for = "name">名前</label>
+          <input type = "text" id = "name"">
+          <br>
+          
+          <label for = "email">メールアドレス</label>
+          <input type = "email" id = "email">
+        
+        
     </body>
 </html>
